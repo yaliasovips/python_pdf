@@ -1,5 +1,8 @@
+import fpdf
 from fpdf import FPDF
 from os import path
+
+fpdf.set_global('FPDF_CACHE_MODE', 1)
 
 # path to image
 imagePath = path.abspath('alfabank_logo.png')
@@ -24,6 +27,7 @@ dataDict = {
     'refnum': '6758617982031',
     'auth_code': '200'
 }
+
 
 class PDF(FPDF):
     def setImage(self):
