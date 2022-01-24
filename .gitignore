@@ -6,7 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+*.cw127.pkl
+*.pkl
+*.pdf
+
 # Distribution / packaging
+.idea
 .Python
 build/
 develop-eggs/
